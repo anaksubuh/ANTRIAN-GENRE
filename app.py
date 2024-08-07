@@ -7,6 +7,18 @@ import pygame
 import hashlib
 from time import sleep
 
+st.set_page_config(
+    page_title='GENRE KOTA MAGELANG',
+    page_icon='logo.png',
+    layout='wide',  
+    initial_sidebar_state='expanded',
+    menu_items={
+        'Get Help': 'https://www.extremelycoolapp.com/help',
+        'Report a bug': 'https://www.extremelycoolapp.com/bug',
+         'About': '# This is a header. This is an *extremely* cool app!'
+    }
+)
+
 pygame.mixer.init()
 
 # Fungsi untuk menyimpan data ke file
@@ -110,7 +122,7 @@ def show_announcement_page():
         
         # Tunda beberapa detik sebelum memeriksa lagi
 
-        sleep(60)  # Adjust sleep time as necessary
+        sleep(5)  # Adjust sleep time as necessary
         st.experimental_rerun()  # Rerun aplikasi untuk pembaruan
 
 
